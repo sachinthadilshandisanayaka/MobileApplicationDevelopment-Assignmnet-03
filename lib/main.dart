@@ -1,9 +1,8 @@
-import 'dart:html';
 import 'dart:ui';
-
 import 'package:battery/battery.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
+import 'package:widget_testing/second.dart';
 
 void main() {
   runApp(MyApp());
@@ -136,6 +135,16 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ]),
                     ],
+                  ),
+                ),
+                Container(
+                  child: Center(
+                    child: FloatingActionButton(onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SecondActivity()));
+                    }),
                   ),
                 ),
               ],
