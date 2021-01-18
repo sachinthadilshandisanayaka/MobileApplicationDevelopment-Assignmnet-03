@@ -30,8 +30,11 @@ class _HomePageState extends State<HomePage> {
   BatteryState state;
   bool broadcastBattery;
 
+  // ignore: non_constant_identifier_names
   Color COLOR_RED = Colors.red;
+  // ignore: non_constant_identifier_names
   Color COLOR_GREEN = Colors.greenAccent;
+  // ignore: non_constant_identifier_names
   Color COLOR_GRAY = Colors.grey;
 
   @override
