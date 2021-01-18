@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -39,9 +38,13 @@ class _SecondActivityState extends State<SecondActivity> {
                     height: 20.0,
                   ),
                   TextFormField(
-                    validator: (value) => value.isEmpty? 'Text field should not be empty': null,
+                    validator: (value) =>
+                        value.isEmpty ? 'Text field should not be empty' : null,
                   ),
-                  FlatButton.icon(onPressed: null, icon: Icon(Icons.send), label: Text("Send"))
+                  FlatButton.icon(
+                      onPressed: null,
+                      icon: Icon(Icons.send),
+                      label: Text("Send"))
                 ],
               ),
             ),
