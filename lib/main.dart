@@ -4,6 +4,7 @@ import 'package:battery/battery.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 import 'package:widget_testing/second.dart';
+import 'package:widget_testing/third.dart';
 
 void main() {
   runApp(MyApp());
@@ -155,7 +156,10 @@ class _HomePageState extends State<HomePage> {
                         ),
                         FloatingActionButton(
                           onPressed: () {
-                            Navigator.push(context, route)
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ThridActivity()));
                           },
                         )
                       ],
