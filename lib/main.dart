@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'dart:ui';
 import 'package:battery/battery.dart';
 import 'package:flutter/material.dart';
@@ -142,12 +143,23 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Container(
                   child: Center(
-                    child: FloatingActionButton(onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => SecondActivity()));
-                    }),
+                    child: Column(
+                      children: <Widget>[
+                        FloatingActionButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => SecondActivity()));
+                          },
+                        ),
+                        FloatingActionButton(
+                          onPressed: () {
+                            Navigator.push(context, route)
+                          },
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],
