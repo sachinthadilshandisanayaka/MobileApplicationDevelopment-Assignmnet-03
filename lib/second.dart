@@ -15,7 +15,7 @@ class _SecondActivityState extends State<SecondActivity> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-          home: Scaffold(
+      home: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.white,
@@ -43,8 +43,9 @@ class _SecondActivityState extends State<SecondActivity> {
                     ),
                     TextFormField(
                       key: Key('input-name-field'),
-                      validator: (value) =>
-                          value.isEmpty ? 'Text field should not be empty' : null,
+                      validator: (value) => value.isEmpty
+                          ? 'Text field should not be empty'
+                          : null,
                       onChanged: (val) {
                         setState(() {
                           getName = val;

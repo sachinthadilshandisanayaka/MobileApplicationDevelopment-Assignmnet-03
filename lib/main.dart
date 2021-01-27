@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'dart:ui';
 import 'package:battery/battery.dart';
 import 'package:flutter/material.dart';
